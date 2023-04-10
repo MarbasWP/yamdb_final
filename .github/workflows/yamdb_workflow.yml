@@ -38,6 +38,7 @@ jobs:
           push: true
           tags: marbaswp/yamdb_final:latest
           context: ./api_yamdb
+          dockerfile: ./api_yamdb/Dockerfile
 
   deploy:
     name: Deploy
