@@ -10,8 +10,8 @@ from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from api_yamdb.reviews.models import Category, Genre, Review, Title
-from api_yamdb.users.models import User
+from reviews.models import Category, Genre, Review, Title
+from users.models import User
 
 from .filters import TitleFilter
 from .permissions import AuthorModeratorOrReadOnly, IsAdmin
