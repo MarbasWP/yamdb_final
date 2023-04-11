@@ -7,8 +7,7 @@ services:
     env_file:
       - ./.env
   web:
-    build:
-      context: ../api_yamdb/
+    image: marbaswp/yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
