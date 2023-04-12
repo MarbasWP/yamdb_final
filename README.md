@@ -1,5 +1,5 @@
 # Проект YaMDb
-
+IP - 84.201.140.189
 ![example workflow](https://github.com/marbaswp/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
@@ -25,8 +25,8 @@ ___
 ### Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
 ```
-git clone git@github.com:MarbasWP/infra_sp2.git
-cd infra
+git clone git@github.com:MarbasWP/yamdb_final.git
+cd yamdb_final
 ```
 Развернуть докер контейнеры:
 
