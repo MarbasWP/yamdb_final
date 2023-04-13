@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', default='default-value')
 DEBUG = os.getenv('DEBUG', default=False)
-
+DB_SQLITE = os.getenv('DB_SQLITE', default=True)
 ALLOWED_HOSTS = [os.getenv('HOSTS', default='*')]
 
 INSTALLED_APPS = [
@@ -54,7 +54,7 @@ WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
 
 # Database
-if DEBUG:
+if DB_SQLITE:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
