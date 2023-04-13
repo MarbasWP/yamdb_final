@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', default='default-value')
 DEBUG = os.getenv('DEBUG', default=False)
-DB_SQLITE = os.getenv('DB_SQLITE', default=True)
+DB_SQLITE = os.getenv('DB_SQLITE', default=False)
 ALLOWED_HOSTS = [os.getenv('HOSTS', default='*')]
 
 INSTALLED_APPS = [
